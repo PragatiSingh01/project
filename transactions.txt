@@ -1,0 +1,3 @@
+05-02-2006	Income	50000	papa
+10-02-2006	Expense	700	Food	outing
+30-02-2006	Income	12000	papa
