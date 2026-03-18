@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-// ---------------- TRANSACTION ----------------
+
 abstract class Transaction {
     String date;
     int amount;
@@ -13,7 +13,7 @@ abstract class Transaction {
     abstract String toFileString();
 }
 
-// ---------------- INCOME ----------------
+
 class Income extends Transaction {
     String source;
     int counter = 0;
@@ -39,7 +39,7 @@ class Income extends Transaction {
     }
 }
 
-// ---------------- EXPENSE ----------------
+
 class Expense extends Transaction {
 
     String description;
@@ -83,7 +83,7 @@ class Expense extends Transaction {
     }
 }
 
-// ---------------- FILE MANAGER ----------------
+
 class FileManager {
     static void saveTransaction(String data) {
         try {
@@ -96,7 +96,7 @@ class FileManager {
     }
 }
 
-// ---------------- VIEW TRANSACTIONS ----------------
+
 class ViewTransactions {
     static void view() {
         try {
@@ -118,7 +118,7 @@ class ViewTransactions {
     }
 }
 
-// ---------------- MONTHLY SUMMARY ----------------
+
 class monthlySummary {
 
     static void show() {
@@ -163,7 +163,7 @@ class monthlySummary {
     }
 }
 
-// ---------------- CATEGORY ANALYSIS ----------------
+
 class categoryAnalysis {
 
     static void Analyse() {
@@ -206,7 +206,7 @@ class categoryAnalysis {
     }
 }
 
-// ---------------- MAIN CLASS ----------------
+
 public class Test {
     public static void main(String[] args) {
 
